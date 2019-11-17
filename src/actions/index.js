@@ -1,7 +1,7 @@
 import axios from 'axios';
 import ActionTypes from './ActionTypes';
+import {hostUrl} from '../config';
 
-const hostUrl = 'https://jsonplaceholder.typicode.com';
 
 export const getUsersData = () => async dispatch => {
 

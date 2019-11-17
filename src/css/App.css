@@ -228,3 +228,19 @@ body {
     color: #efeeee;
     padding: 10px;
 }
+
+.comments_list-item {
+    border: 1px solid;
+    padding: 2px;
+}
+
+.show__more {
+    float: right;
+    cursor: pointer;
+    padding: 5px;
+    background-color: #760a0af5;
+    outline: none;
+    border: 1px solid #891111;
+    border-radius: 2px;
+    text-transform: uppercase;
+}

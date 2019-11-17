@@ -2,14 +2,29 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import * as actions from '../actions';
+import {limit} from '../config';
 
 class UserPosts extends Component {
 
+    constructor(props) {
+        super(props);
+
+        this.loadMorePosts = this.loadMorePosts.bind(this);
+    }
+
     componentDidMount() {
-        const {getPosts, getUserData, match} = this.props;
+        const {getPosts, getUserData, match, userPosts} = this.props;
         const {params} = match;
-        getPosts(params.userId, 0 , 100);
+        if (userPosts.length === 0) {
+            getPosts(params.userId);
+        }
         getUserData(params.userId);
+    }
+
+    loadMorePosts() {
+        const {getPosts, getUserData, match, userPosts = []} = this.props;
+        const {params} = match;
+        getPosts(params.userId, userPosts.length, limit);
     }
 
     render() {
@@ -34,6 +49,9 @@ class UserPosts extends Component {
                             </div>  
                         )
                     })}
+                    <button className="show__more" onClick={this.loadMorePosts}>
+                        Show More
+                    </button>
                 </div>
             </div>
         );
