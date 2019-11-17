@@ -1,0 +1,230 @@
+.App-logo {
+    height: 62px;
+    width : 125px;
+    left : 10px;
+}
+
+.logo {
+    height: 5rem;
+    width: 6rem;
+    margin-left: 2rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;   
+}
+
+@media only screen and (max-width: 767px) {
+    html {
+        font-size: 50%;   
+    }
+}
+
+.header {
+    font-size: 1.4rem;
+    height: 7rem;
+    background-color: #fff;
+    border-bottom: 1px solid #f4f2f2;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #777;
+    background-image: linear-gradient(to right bottom, #e6bbc754, #530625ab), url(../assets/img/4.jpg);
+    background-size: contain;
+    /*background-repeat: no-repeat; */
+    min-height: 100vh;
+}
+
+.card__side--front {
+    background-color: #fff;
+}
+
+.card__side {
+    cursor: pointer;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    padding: 10px;
+    width: 45rem;
+    margin: 10px;
+    background-image: linear-gradient(to right bottom, rgba(146, 148, 150, 0.85), rgba(20, 20, 21, 0.85));
+}
+
+.post_card__side {
+    cursor: pointer;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    padding: 10px;
+    width: 50%;
+    margin: 10px;
+    background-image: linear-gradient(to right bottom, rgba(146, 148, 150, 0.85), rgba(20, 20, 21, 0.85));
+}
+
+.showlist__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.posts__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.list__container {
+    padding: 50px;
+    max-width: 1440px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.footer {
+    background-color: #333;
+    padding: 5rem 0;
+    background-image: linear-gradient(to right bottom, rgba(70, 73, 75, 0.85), rgba(16, 15, 18, 0.85))
+}
+
+.footer__logo-box {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.card__picture {
+    height: 60%;
+    width: 100%;
+}
+
+.card__image {
+    height: 100%;
+    width: 100%;
+}
+
+.card__heading {
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.card__heading-span {
+    background-image: linear-gradient(to right bottom, rgba(146, 148, 150, 0.85), rgba(20, 20, 21, 0.85));
+    padding: 1rem 1.5rem;
+}
+
+.card__details {
+    font-size: 1.8rem;
+    margin-top: 10px;
+    text-align: center;
+    color: #1a0808;
+}
+
+.iframe__wrapper{
+    width: 100%;
+    height: 65vh;
+    margin: 10px;
+}
+
+.iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.details__wrapper {
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+.details_img {
+    flex: 30%;
+    margin-right: 20px;
+    width: 50%;
+    height: 70rem;
+}
+
+.inner_wrapper--details {
+    flex: 50%;
+    font-size: 2rem;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.detail_title {
+    font-size: 5rem;
+    text-transform: capitalize;
+}
+
+.desciption {
+    width: 80%;
+}
+
+.delete_button {
+    position: absolute;
+    font-size: 4rem;
+    text-decoration: none;
+    color: gray;
+    top: 0%;
+    right: 20%;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 4px;
+    box-shadow: 0 0.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+.comments_link {
+    font-size: 16px;
+    color: black;
+    text-decoration-line: underline;
+    cursor: pointer;
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.hide_comments {
+    float: right;
+    cursor: pointer;
+    padding: 5px;
+    background-color: #760a0af5;
+    outline: none;
+    border: 1px solid #891111;
+    border-radius: 2px;
+    text-transform: uppercase;
+}
+
+.comments_list {
+    font-size: 14px;
+    color: #efeeee;
+    padding: 10px;
+}
