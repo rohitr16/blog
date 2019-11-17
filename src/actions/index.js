@@ -48,6 +48,6 @@ export const getPostComments = (postId) => async dispatch => {
 
 export const deletePost = (postId, userId, history) => async dispatch => {
 
-    const res = await axios.delete(`${hostUrl}/posts/${postId}`); 
+    await axios.delete(`${hostUrl}/posts/${postId}`); 
     history.push(`/posts/${userId}`);
 };

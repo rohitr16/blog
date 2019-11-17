@@ -22,7 +22,7 @@ class UserPosts extends Component {
     }
 
     loadMorePosts() {
-        const {getPosts, getUserData, match, userPosts = []} = this.props;
+        const {getPosts, match, userPosts = []} = this.props;
         const {params} = match;
         getPosts(params.userId, userPosts.length, limit);
     }
